@@ -352,16 +352,40 @@
           </li>
         </ul>
       </div>
+      <div class="subscribe-wrapper">
+        <p class="subscribe-title">Подпишитесь на рассылку</p>
+        <form class="subscribe-form" action="">
+          <input class="input-field" type="text" name="e-mail" placeholder="E-mail">
+          <button class="subscribe-btn" type="submit">Подписаться</button>
+
+        </form>
+      </div>
+
+
     </div>
   </footer>
 
   <!-- MODAL -->
 
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop" data-modal>
     <div class="modal">
       <button class="modal-close-btn" data-modal-close><svg class="modal-btn-icon" width="11" height="11">
           <use href="./images/sprite.svg#close-btn-icon"></use>
         </svg></button>
+      <div class="contact-form">
+        <h1 class="contact-form-title">Оставьте свои данные, мы вам перезвоним</h1>
+        <form action="">
+          <label class="input-name" for="">Имя<input class="form-input" type="text"></label>
+          <label class="input-name" for="">Телефон<input class="form-input" type="text"></label>
+          <label class="input-name" for="">Почта<input class="form-input" type="text"></label>
+          <label class="input-name" for="">Комментарий<textarea class="text-area" name="" id="" cols="30" rows="10"
+              placeholder="Введите текст"></textarea></label>
+          <input class="checkbox" type="checkbox">
+          <p class="consent">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p>
+          <button class="modal-submit-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
